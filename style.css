@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+body {
+    display: flex;
+
+    background-color: var(--background);
+
+}
+
+.main {
+    width: 65vw;
+}
+
+#logo {
+    margin: 4rem 0 0 4rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.4rem;
+
+    background-color: var(--form-background);
+    width: 57rem;
+    height: 51rem;
+
+    margin: 17vh 0 0 14vw;
+
+    padding: 5.5rem 0 0 12rem;
+}
+
+.register {
+    display: flex;
+    gap: .5rem;
+
+    padding: 0;
+}
+
+.car-image {
+    display: flex;
+    justify-self: end;
+}
+
+.car-image img {
+    max-width: auto;
+    max-height: 100vh;
+}
+
+/* form inputs */
+form input {
+    width: 33.5rem;
+    height: 4.5rem;
+
+    padding-left: 3.7rem;
+
+    border: 1.8px solid #868686;
+    border-radius: .4rem;
+
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: var(--text-base);
+}
+
+form input:focus {
+    border: 1.8px solid var(--primary-color);
+    outline: none;
+}
+
+#email,
+#password,
+#email-focus,
+#password-focus {
+    background-color: transparent;
+    background-image: url(./assets/email-normal.svg);
+    background-position: .8rem;
+    background-repeat: no-repeat;
+}
+
+#password {
+    background-image: url(./assets/password-normal.svg);
+}
+
+#email:focus {
+    background-image: url(./assets/email-focus.svg);
+}
+
+#password:focus {
+    background-image: url(./assets/password-focus.svg);
+}
+
+.password-input button {
+    border: none;
+    background: transparent;
+
+    position: relative;
+    top: 7px;
+    right: 40px;
+}
+
+.password-input button:hover {
+    cursor: pointer;
+}
+
+.checkbox-forgotPassword {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.checkbox-forgotPassword a {
+    margin-left: 4.5rem;
+}
+
+#checkbox {
+    padding: 0;
+    width: 2rem;
+    height: 2rem;
+
+    border: 1.8px solid #868686;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+}
+
+#checkbox:checked {
+    background-image: url(./assets/checked.svg);
+
+    background-color: var(--primary-color);
+    border: 1.8px solid var(--primary-color);
+    background-position: center;
+}
+
+#checkbox:hover {
+    cursor: pointer;
+}
+
+#submit-button {
+    padding: 0;
+    background-color: var(--primary-color);
+
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+    color: #473404;
+    text-transform: uppercase;
+    border: 1.8px solid var(--primary-color);
+}
+
+#submit-button:hover {
+    background-color: rgb(212, 163, 39);
+    cursor: pointer;
+}
+
+/* fonts and colors */
+h1 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: var(--text-title);
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+p, 
+label {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--text-base);
+}
+
+label {
+    font-family: 'Poppins';
+}
+
+.checkbox-forgotPassword label {
+    font-weight: 400;
+}
+
+a,
+.register p {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+}
+
+.register p {
+    font-weight: 400;
+}
+
+a:hover {
+    scale: 1.03;
+}
+
+@media (max-width: 1450px) {
+    .car-image {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    #logo {
+        width: 11.5rem;
+        height: 2.8rem;
+        display: flex;
+        justify-self: center;
+    }
+
+    form {
+        background-color: var(--background);
+        margin: auto;
+    }
+}
+
