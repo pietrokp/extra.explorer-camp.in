@@ -17,8 +17,8 @@ Projetos e desafios extras encontrados na Biblioteca Explorer, da Rocketseat.
 <br>
 
 <p align="center">
-  <img alt="desafio extra camp.in web" src="./assets/web.png" width="100%">
-  <img alt="desafio extra camp.in mobile" src="./assets/mobile.png" width="50%">
+  <img alt="desafio extra camp.in web" src="./assets/web.jpg" width="100%">
+  <img alt="desafio extra camp.in mobile" src="./assets/mobile.jpg" width="50%">
 </p>
 
 ## 🚀 Tecnologias
